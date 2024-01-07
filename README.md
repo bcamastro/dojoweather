@@ -1,0 +1,1 @@
+Dojo weather is a practice weather website, practicing HTML, css, and JavaScript functions
