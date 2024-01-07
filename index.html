@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- nav and links -->
+        <div id="navbar">
+            <h1>DojoWeather</h1>
+            <!-- City links -->
+            <ul class="nav-links">
+                <li id="city-1" onclick="alert('loading weather report ...')">Burbank</li>
+                <li id="city-2" onclick="alert('loading weather report ...')">Chicago</li>
+                <li id="city-3" onclick="alert('loading weather report ...')">Dallas</li>
+            </ul>
+        </div>
+        <div id="main_content">
+            <!-- top content bellow navbar -->
+            <div class="top">
+                <h2>San Jose</h2>
+                <div class="temp_select">
+                    <label for="degrees">show temperature in</label>
+                    <select name="degrees" id="choose-degrees" onchange="tempConverter(this)">
+                        <option value="°C">°C</option>
+                        <option value="°F">°F</option>
+                    </select>
+                </div>
+            </div>
+            <!-- forcast columns -->
+            <div class="forcast">
+                <div class="forcast_column">
+                    <h2>Today</h2>
+                    <img src="static/images/some_rain.png" alt="Some Rain">
+                    <p>Some Rain</p>
+                    <div class="temps">
+                        <p class="high" id="temp1">24</p>
+                        <p class="low" id="temp2">18</p>
+                    </div>
+                </div>
+                <div class="forcast_column">
+                    <h2>Tomorrow</h2>
+                    <img src="static/images/some_sun.png" alt="Some Sun">
+                    <p>Some sun</p>
+                    <div class="temps">
+                        <p class="high" id="temp3">27</p>
+                        <p class="low" id="temp4">19</p>
+                    </div>
+                </div>
+                <div class="forcast_column">
+                    <h2>Friday</h2>
+                    <img src="static/images/some_clouds.png" alt="Some Clouds">
+                    <p>Some Clouds</p>
+                    <div class="temps">
+                        <p class="high" id="temp5">21</p>
+                        <p class="low" id="temp6">16</p>
+                    </div>
+                </div>
+                <div class="forcast_column">
+                    <h2>Saturday</h2>
+                    <img src="static/images/some_sun.png" alt="Some Sun">
+                    <p>Some Sun</p>
+                    <div class="temps">
+                        <p class="high" id="temp7">26</p>
+                        <p class="low" id="temp8">21</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cookies">
+                <img src="static/images/cookie.png" alt="cookie">
+                <div>
+                    <h3>Stop! Cookie time</h3>
+                    <p>
+                        we use cookies (sadly not the edable ones) 
+                        to personalize <br>content and ads,
+                        to provide social media features and to <br> analyze 
+                        our traffic. <a href="#">Read more</a>
+                    </p>
+                </div>
+                <button onclick="closeCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
